@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	loc, _ := time.LoadLocation("America/New_York")
+	loc, _ := time.LoadLocation("Local")
 	launch := time.Date(2023, time.Month(5), 12, 0, 0, 0, 0, loc)
 	countdown := int(launch.Sub(time.Now()).Hours() / 24)
 
